@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
 
+:root {
+    --main-bg-color: bisque;
+    --container-color: darksalmon;
+  }
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: bisque;
+    background-color: var(--main-bg-color);
     color: dimgrey;
     font-family: 'Muli', sans-serif;
     display: flex; /*center everything*/
@@ -19,7 +24,7 @@ body {
 }
 
 .container {
-    background-color: darksalmon;
+    background-color: var(--container-color);
     padding: 20px 40px;
     border-radius: 5px;
 }
@@ -38,7 +43,7 @@ body {
     cursor: pointer;
     display: inline-block;
     width: 100%;
-    background: bisque;
+    background: var(--main-bg-color);
     padding: 15px;
     font-family: inherit;
     font-size: 16px;
